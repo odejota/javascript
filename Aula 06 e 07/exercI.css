@@ -1,0 +1,143 @@
+/* ? Crie uma nova página com 3 campos para o usuário digitar 3 notas e, ao clicar no botão, será informada a média e se está aprovado ou não. */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Permanent+Marker&display=swap');
+
+body {
+    background-color: rgb(44, 44, 165);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.container {
+    background-color: midnightblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 15px;
+    padding: 5% 5% 2% 5%;
+    box-shadow: 0px 0px 28px 10px rgba(0, 0, 0, 0.26);
+    margin: 2.5%;
+}
+
+h2 {
+    color: deeppink;
+    text-decoration: underline;
+    font-family: 'Permanent Marker', cursive;
+}
+
+label, input {
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin: 0;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+input {
+    padding-left: 10px;
+}
+
+.btnCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgba(255, 20, 145, 0.808);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin: 1.5vw 1vw 0vw 0.3vw;
+    padding: 5px;
+    width: 17vw;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 28px 10px rgba(255, 20, 145, 0.384);
+    text-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.384);
+    transition: 0.3s;
+}
+
+.btnCont2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35.5vw;
+}
+
+.btnCont2 label {
+    font-size: 15px;
+}
+
+.btnCont2 input {
+    width: 7vw;
+    height: 3.3vh;
+}
+
+.btnRmvItem {
+    background-color: rgba(255, 20, 145, 0.808);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin: 0vw 0.5vw;
+    padding: 5px;
+    width: 5vw;
+    text-align: center;
+}
+
+.btnRmvItem:hover {
+    box-shadow: 0px 0px 28px 10px rgba(255, 20, 145, 0.384);
+    text-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.384);
+    transition: 0.3s;
+}
+
+.btnLimp {
+    background-color: rgba(255, 20, 145, 0.808);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin: 0vw 0.3vw;
+    padding: 5px;
+    width: 35.5vw;
+    text-align: center;
+}
+
+.btnLimp:hover {
+    box-shadow: 0px 0px 28px 10px rgba(255, 20, 20, 0.616);
+    text-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.384);
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(44, 44, 165);
+    margin: 1vh;
+    /* height: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    text-align: center;
+}
+
+a:hover {
+    box-shadow: 0px 0px 20px 10px rgba(44, 44, 165, 0.384);
+    transition: 0.3s;
+}

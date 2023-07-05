@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício II</title>
+
+    <link rel="stylesheet" href="exercII.css">
+</head>
+
+<body>
+    <!--? Crie uma nova página com 3 campos para o usuário digitar 3 notas e, ao clicar no botão, será informada a média e se está aprovado ou não. -->
+
+    <main class="container">
+        <h2>A Média</h2>
+
+        <p>Para saber a média do aluno, e se foi aprovado ou não, informe suas 3 notas nos campos abaixo.</p>
+
+        <label for="n1">Nota 1:</label>
+        <input type="number" name="n1" id="n1">
+
+        <label for="n2">Nota 2:</label>
+        <input type="number" name="n2" id="n2">
+
+        <label for="n3">Nota 3:</label>
+        <input type="number" name="n3" id="n3">
+
+        <input type="button" value="Calcular média" onclick="mediaAluno()" class="btn">
+
+        <label for="media">A média do aluno é:</label>
+        <input type="text" name="media" id="md" disabled>
+
+        <label for="situacao">A situação do aluno é:</label>
+        <input type="text" name="situacao" id="sit" disabled>
+
+        <a href="exercI.html">
+            <p>Experimente também o exercício de par ou ímpar</p>
+        </a>
+    </main>
+
+
+    <script src="exercII.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício I</title>
+
+    <link rel="stylesheet" href="exercI.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <!--? Crie uma nova página com uma lista para ser alimentada usando appendChild. -->
+
+    <main class="container">
+        <h2>A Lista</h2>
+
+        <p>Digite um produto:</p>
+
+        <input type="text" name="produto" id="produto">
+
+        <input type="button" value="Inserir item" onclick="inserir()" class="btn">
+
+        <div class="btnCont">
+            <input type="button" value="Remover primeiro item" onclick="removerPrimeiro()" class="btn">
+
+            <input type="button" value="Remover último item" onclick="removerUltimo()" class="btn">
+        </div>
+
+        <div class="btnCont2">
+            <label for="item">Remover item nº:</label>
+            
+            <input type="number" name="item" id="itemDaLista">
+
+            <span type="button" onclick="removerItem()" class="material-symbols-outlined btnRmvItem">
+                delete
+            </span>
+        </div>
+
+        <input type="button" value="Limpar lista" onclick="limparLista()" class="btnLimp">
+
+        <ol id="lista">
+
+        </ol>
+
+        <a href="../Aula 05/exerc.jsweb/exercI.html">
+            <p>Experimente também o exercício de par ou ímpar</p>
+        </a>
+
+        <a href="../Aula 05/exerc.jsweb/exercII.html">
+            <p>Experimente também o exercício de média de notas</p>
+        </a>
+    </main>
+
+
+    <script src="exercI.js"></script>
+</body>
+
+</html>
