@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício I - Conversor de Medidas</title>
+
+    <link rel="stylesheet" href="exercI.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <main class="container">
+        <h2>O Conversor de Medidas</h2>
+
+        <label for="medida">Medida:</label>
+        <input type="text" name="medida" id="medida" placeholder="10000">
+
+        <div class="container2">
+            <div class="selectCont">
+                <label for="de">Converter de:</label>
+                <select name="de" id="de">
+                    <option value="mm">Milímetro(s)</option>
+                    <option value="cm">Centímetro(s)</option>
+                    <option value="m">Metro(s)</option>
+                    <option value="km">Quilômetro(s)</option>
+                </select>
+            </div>
+            
+            <div class="selectCont">
+                <label for="para">Para:</label>
+                <select name="para" id="para">
+                    <option value="mm">Milímetro(s)</option>
+                    <option value="cm">Centímetro(s)</option>
+                    <option value="m">Metro(s)</option>
+                    <option value="km">Quilômetro(s)</option>
+                </select>
+            </div>
+        </div>
+
+        <input type="button" value="Converter" class="btn">
+
+        <div class="container2">
+            <label for="resultado">Resultado:</label>
+            <input type="number" name="resultado" id="resultado" disabled>
+        </div>
+
+        <div class="container2">
+            <p id="msg"></p>
+        </div>
+
+        <a href="../Aula 05/exerc.jsweb/exercI.html">
+            <p>Experimente também o exercício de par ou ímpar</p>
+        </a>
+
+        <a href="../Aula 05/exerc.jsweb/exercII.html">
+            <p>Experimente também o exercício de média de notas</p>
+        </a>
+    </main>
+
+
+    <script src="exercI.js"></script>
+</body>
+
+</html>
