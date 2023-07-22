@@ -1,5 +1,5 @@
 // * 1. Criar uma página HTML que receba o vetor de objetos de produtos e imprima cada uma das propriedades e valores de cada um dos objetos.
-// TODO: 2. Atualizar um registro no array de objeto.
+// * 2. Atualizar um registro no array de objeto.
 // * 3. Deletar um registro no array de objeto.
 
 const marca = document.querySelector('#marca');
@@ -57,7 +57,6 @@ function listVeiculo() {
     //     };
     // };
 
-
     veiculosCadastrados.forEach(car => {
         const infoCar = document.createTextNode(`${car.brand} | ${car.model} | ${car.year}`);
 
@@ -112,36 +111,42 @@ function editVeiculo(posicaoVetor) {
         containerEdit.style.display = 'block';
     };
 
-    const editVeiculo = veiculosCadastrados[posicaoVetor];
+    const index = posicaoVetor;
+    const editVeiculo = veiculosCadastrados[index];
+    idx = index;
 
     document.querySelector('#editMarca').value = editVeiculo.brand;
     document.querySelector('#editModelo').value = editVeiculo.model;
     document.querySelector('#editAno').value = editVeiculo.year;
 
     console.log(editVeiculo);
-    console.log(posicaoVetor);
-
-    function salvarEdit() {
-        const editMarca = document.querySelector('#editMarca').value;
-        const editModelo = document.querySelector('#editModelo').value;
-        const editAno = document.querySelector('#editAno').value;
-
-        let veicEditado = { brand: editMarca, model: editModelo, year: editAno };
-
-        console.log(veicEditado);
-        console.log(posicaoVetor);
-
-        veiculosCadastrados.splice(posicaoVetor, 1, veicEditado);
-
-        if (containerCad.style.display = 'none') {
-            containerEdit.style.display = 'none';
-            containerCad.style.display = 'block';
-        };
-
-        limpar();
-        listVeiculo();
-    };
+    console.log(index);
 
     const editBtn = document.querySelector('#editBtn');
     editBtn.addEventListener('click', salvarEdit);
+};
+
+let idx;
+
+function salvarEdit() {
+    const containerEdit = document.querySelector('.containerEdit');
+    const containerCad = document.querySelector('.containerCad');
+    const editMarca = document.querySelector('#editMarca').value;
+    const editModelo = document.querySelector('#editModelo').value;
+    const editAno = document.querySelector('#editAno').value;
+
+    let veicEditado = { brand: editMarca, model: editModelo, year: editAno };
+
+    console.log(veicEditado);
+    console.log(idx);
+
+    veiculosCadastrados.splice(idx, 1, veicEditado);
+
+    if (containerCad.style.display = 'none') {
+        containerEdit.style.display = 'none';
+        containerCad.style.display = 'block';
+    };
+
+    limpar();
+    listVeiculo();
 };
