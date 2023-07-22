@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Maven Pro', sans-serif; */
+    /* font-family: 'Monoton', cursive; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 112);
+}
+
+hr {
+    width: 100%;
+    margin: 2vw 0 2vw 0;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid;
+    width: 18.4vw;
+    height: 2.5vh;
+    padding-left: 2px;
+}
+
+.containerMain {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: floralwhite;
+    padding: 3vw;
+    border-radius: 10px;
+    margin: 5vh;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.containerMain h1 {
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+    color: rgb(0, 0, 204);
+    text-decoration: underline;
+    margin-bottom: 3vw;
+}
+
+.containerCad h2, .containerEdit h2, button {
+    margin: 2vw 0 2vw 0;
+}
+
+.containerEdit {
+    display: none;
+}
+
+#btn, #editBtn {
+    color: floralwhite;
+    background-color: rgb(0, 0, 204);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 1vh;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+
+#btn:hover, #editBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#btn:active, #editBtn:active {
+    transform: translateY(0px);
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.containerList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerTab {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#containerTab ul {
+    list-style: none;
+}
+
+#containerTab li {
+    margin: 1vh;
+}
+
+.bi-pencil-square {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.bi-trash3 {
+    color: rgb(199, 0, 0);
+    cursor: pointer;
+}

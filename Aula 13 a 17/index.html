@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 a 17 - Atividade CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- * 1. Criar uma página HTML que receba o vetor de objetos de produtos e imprima cada uma das propriedades e valores de cada um dos objetos. -->
+    <!-- * 2. Atualizar um registro no array de objeto. -->
+    <!-- * 3. Deletar um registro no array de objeto. -->
+
+    <main class="containerMain">
+        <h1>Dejota Auto</h1>
+
+        <section class="containerCad">
+            <h2>Cadastro de veículos</h2>
+
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" id="marca" placeholder="Datsun">
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" name="modelo" id="modelo" placeholder="280Z">
+
+            <label for="ano">Ano:</label>
+            <input type="number" name="ano" id="ano" placeholder="1962">
+
+            <button type="submit" id="btn">Cadastrar</button>
+        </section>
+        
+        <section class="containerEdit">
+            <h2>Editar cadastro de veículo</h2>
+
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" id="editMarca">
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" name="modelo" id="editModelo">
+
+            <label for="ano">Ano:</label>
+            <input type="number" name="ano" id="editAno">
+
+            <button type="submit" id="editBtn">Recadastrar</button>
+        </section>
+
+        <hr>
+
+        <section class="containerList">
+            <h2>Veículos Cadastrados</h2>
+
+            <div id="containerTab">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
